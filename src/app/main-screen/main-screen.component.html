@@ -1,11 +1,20 @@
-<p>main-screen works!</p>
 
-<mat-card>
+<mat-card class="card">
+    <h2>Inversor de Texto</h2>
+    <mat-form-field color="accent" appearance="outline" class="full-width">
+        <mat-label>Entrada</mat-label>
+        <textarea matInput placeholder="Escreva algo aqui...." [(ngModel)]="text1" (input)="changeText1()"></textarea>
+    </mat-form-field>
     <mat-divider></mat-divider>
-        <mat-radio-group aria-label="Select an option">
-            <mat-radio-button value="1">Option 1</mat-radio-button>
-            <mat-radio-button value="2">Option 2</mat-radio-button>
-        </mat-radio-group>
+    <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="type_convertion" (change)="changeText1()">
+        <mat-radio-button value="0" class="radio-button">Inverter Texto</mat-radio-button>
+        <mat-radio-button value="1" class="radio-button">Tudo maiúsculo</mat-radio-button>
+        <mat-radio-button value="2" class="radio-button">Tudo minúsculo</mat-radio-button>
+    </mat-radio-group>
     <mat-divider></mat-divider>
+    <mat-form-field color="accent" appearance="outline" class="full-width botton-form-field">
+        <mat-label>Saída</mat-label>
+        <textarea matInput [(ngModel)]="text2"></textarea>
+    </mat-form-field>
 </mat-card>
 
