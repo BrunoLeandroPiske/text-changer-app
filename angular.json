@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "text-changer-app"
+  "defaultProject": "text-changer-app",
+  "cli": {
+    "analytics": false
+  }
 }
