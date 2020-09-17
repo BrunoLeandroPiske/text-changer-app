@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="42d4baa16b2099bf56bcd9b007c58778ae512865" datatype="html">
+        <source>
+          Conversor de Texto
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="709f3288a588f39e83fc29327d6abcf4bf6b3fbb" datatype="html">
+        <source>
+          Selecione outros tipos de conversão
+          <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>text_format<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4dcda52ea6799175832144e5992d39b1a0a37dd3" datatype="html">
+        <source>Conversor de Texto <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>text_format<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="32b782aad3745eece56b85d5e61f44ef71de6a49" datatype="html">
+        <source>Conversor Numérico <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>engineering<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7b1669a5872e37325d96e2b7b2676acf2000b51a" datatype="html">
+        <source>Conversor de Unidades <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>straighten<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3b2f93606ba6ec1aa5c54931e800f56afed3e127" datatype="html">
+        <source>Conversor de Moedas <x id="START_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;mat-icon&gt;"/>attach_money<x id="CLOSE_TAG_MAT-ICON" ctype="x-mat-icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d4f5752aab4fff9bea024ff6f498e81ba6886654" datatype="html">
+        <source>Inversor de Texto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="58337b74e523f1dba4912cae220a48240bacf65f" datatype="html">
+        <source>Entrada</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f311c487c024d772fa84581b5adeb51d5a9b730d" datatype="html">
+        <source>Inverter Texto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fd272f5aaefeef8c4d3359e1001b0db5edc376ce" datatype="html">
+        <source>Tudo maiúsculo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6dfd85183160431997a835742f44611b821a0902" datatype="html">
+        <source>Tudo minúsculo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="25925f80163323a7ffd80d502ac72a28b0a537d9" datatype="html">
+        <source>Saída</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/main-screen/main-screen.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
