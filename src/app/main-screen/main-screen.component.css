@@ -24,3 +24,20 @@
   .botton-form-field {
     padding-top: 1.34375em;
   }
+
+  .floatin-button {
+    position: relative;
+    float: right;
+  }
+
+  .clear {
+    bottom: 3rem;
+  }
+
+  .copy {
+    top: 1rem;
+  }
+
+  .field_text1 {
+    margin-top: -2rem;
+  }

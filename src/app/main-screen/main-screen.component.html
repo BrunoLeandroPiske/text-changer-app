@@ -1,19 +1,25 @@
 
 <mat-card class="card">
-    <h2>Inversor de Texto</h2>
-    <mat-form-field color="accent" appearance="outline" class="full-width">
-        <mat-label>Entrada</mat-label>
+    <h2 i18n>Inversor de Texto</h2>
+    <button mat-fab color="warn" class="floatin-button clear"  (click)="clear()">
+        <mat-icon>clear</mat-icon>
+    </button>
+    <mat-form-field color="accent" appearance="outline" class="full-width field_text1">
+        <mat-label i18n>Entrada</mat-label>
         <textarea matInput placeholder="Escreva algo aqui...." [(ngModel)]="text1" (input)="changeText1()"></textarea>
     </mat-form-field>
     <mat-divider></mat-divider>
     <mat-radio-group aria-label="Select an option" class="radio-group" [(ngModel)]="type_convertion" (change)="changeText1()">
-        <mat-radio-button value="0" class="radio-button">Inverter Texto</mat-radio-button>
-        <mat-radio-button value="1" class="radio-button">Tudo maiúsculo</mat-radio-button>
-        <mat-radio-button value="2" class="radio-button">Tudo minúsculo</mat-radio-button>
+        <mat-radio-button value="0" class="radio-button" i18n>Inverter Texto</mat-radio-button>
+        <mat-radio-button value="1" class="radio-button" i18n>Tudo maiúsculo</mat-radio-button>
+        <mat-radio-button value="2" class="radio-button" i18n>Tudo minúsculo</mat-radio-button>
     </mat-radio-group>
     <mat-divider></mat-divider>
+    <button mat-fab color="primary" class="floatin-button copy" (click)="copy()">
+        <mat-icon>content_copy</mat-icon>
+    </button>
     <mat-form-field color="accent" appearance="outline" class="full-width botton-form-field">
-        <mat-label>Saída</mat-label>
+        <mat-label i18n>Saída</mat-label>
         <textarea matInput [(ngModel)]="text2"></textarea>
     </mat-form-field>
 </mat-card>

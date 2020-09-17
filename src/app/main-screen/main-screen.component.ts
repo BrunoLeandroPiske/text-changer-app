@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Clipboard } from "@angular/cdk/clipboard"
 
 @Component({
   selector: 'app-main-screen',
@@ -11,9 +12,19 @@ export class MainScreenComponent implements OnInit {
   text2: string = '';
   type_convertion: string = '0';
 
-  constructor() { }
+  constructor(private clipboard: Clipboard) { }
 
   ngOnInit(): void {
+  }
+
+  clear() {
+    this.text1 = '';
+    this.text2 = '';
+  }
+
+  copy() {
+    this.clipboard.copy(this.text2);
+    alert("copy!")
   }
 
   changeText1() {

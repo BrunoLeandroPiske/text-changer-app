@@ -1,3 +1,23 @@
 <router-outlet>
+  <mat-accordion class="example-headers-align accordion" multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title i18n>
+          Conversor de Texto
+        </mat-panel-title>
+        <mat-panel-description i18n>
+          Selecione outros tipos de conversão
+          <mat-icon>text_format</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <button mat-raised-button color="accent" i18n>Conversor de Texto <mat-icon>text_format</mat-icon></button>
+      <button mat-raised-button color="accent" i18n>Conversor Numérico <mat-icon>engineering</mat-icon></button>
+      <button mat-raised-button color="accent" i18n>Conversor de Unidades <mat-icon>straighten</mat-icon></button>
+      <button mat-raised-button color="accent" i18n>Conversor de Moedas <mat-icon>attach_money</mat-icon></button>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
   <app-main-screen></app-main-screen>
 </router-outlet>
