@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+import { ClipboardModule } from '@angular/cdk/clipboard'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,14 +29,17 @@ import { MatInputModule } from '@angular/material/input';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    ClipboardModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
     MatDividerModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
