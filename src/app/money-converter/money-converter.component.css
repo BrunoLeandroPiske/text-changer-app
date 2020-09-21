@@ -1,0 +1,43 @@
+.full-width {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .radio-button {
+    padding-right: 10px;
+  }
+
+  .radio-group {
+    display: flow-root;
+    margin: 15px 0;
+  }
+
+  .card {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .divider {
+    margin-top: 10px;
+  }
+
+  .botton-form-field {
+    padding-top: 1.34375em;
+  }
+
+  .floatin-button {
+    position: relative;
+    float: right;
+  }
+
+  .clear {
+    bottom: 3rem;
+  }
+
+  .copy {
+    top: 1rem;
+  }
+
+  .field_text1 {
+    margin-top: -2rem;
+  }
