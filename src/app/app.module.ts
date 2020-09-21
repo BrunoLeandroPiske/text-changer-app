@@ -17,11 +17,17 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MoneyConverterComponent } from './money-converter/money-converter.component';
+import { InProgressComponent } from './in-progress/in-progress.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainScreenComponent
+    MainScreenComponent,
+    MoneyConverterComponent,
+    InProgressComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +43,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatRadioModule,
     MatInputModule,
     MatExpansionModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule,
+    MatProgressBarModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]
