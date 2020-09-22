@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { ClipboardModule } from '@angular/cdk/clipboard'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -36,6 +37,7 @@ import { InProgressComponent } from './in-progress/in-progress.component';
     FormsModule,
     ReactiveFormsModule,
     ClipboardModule,
+    HttpClientModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,
