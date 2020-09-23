@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigServiceModule } from '../config-service.module';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-money-converter',
@@ -8,7 +8,7 @@ import { ConfigServiceModule } from '../config-service.module';
 })
 export class MoneyConverterComponent implements OnInit {
 
-  constructor(private configService: ConfigServiceModule) { }
+  constructor(private apiService: ApiService) { }
 
   currency_dict = {};
 
@@ -52,7 +52,7 @@ export class MoneyConverterComponent implements OnInit {
   }
 
   getCurrency() {
-    this.configService.getAllCurrency().subscribe(data => console.log(data));
+    this.apiService.get('BRL').subscribe(data => console.log(data));
   }
 
 }
