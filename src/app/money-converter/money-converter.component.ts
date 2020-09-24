@@ -24,6 +24,7 @@ export class MoneyConverterComponent implements OnInit {
     {key: 'RON', name: 'Romanian leu'},
     {key: 'SEK', name: 'Swedish krona'},
     {key: 'CHF', name: 'Swiss franc'},
+    {key: 'EUR', name: 'Euro'},
     {key: 'ISK', name: 'Icelandic krona'},
     {key: 'NOK', name: 'Norwegian krone'},
     {key: 'HRK', name: 'Croatian kuna'},
@@ -47,12 +48,28 @@ export class MoneyConverterComponent implements OnInit {
     {key: 'ZAR', name: 'South African rand'}
   ]
 
+  option1 = 'USD';
+  value1 = '1';
+  option2 = 'EUR';
+  value2 = '0';
+
   ngOnInit(): void {
-    this.getCurrency();
+    this.getCurrency(this.option1);
   }
 
-  getCurrency() {
-    this.apiService.get('BRL').subscribe(data => console.log(data));
+  getCurrency(value) {
+    this.apiService.get(value).subscribe(data => {this.currency_dict = data});
+    this.onChangeOption2();
+  }
+
+  onChangeOption1() {
+    this.getCurrency(this.option1);
+  }
+
+  onChangeOption2() {
+    if (Number(this.value1)) {
+      this.value2 = this.value1;
+    }
   }
 
 }

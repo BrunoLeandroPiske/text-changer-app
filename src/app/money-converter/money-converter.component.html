@@ -3,8 +3,8 @@
     <h2 i18n>Câmbio</h2>
     <div>
       <mat-form-field appearance="fill">
-          <mat-label>Select</mat-label>
-          <mat-select>
+          <mat-label>Selecionar Moeda</mat-label>
+          <mat-select ([value])='option1'>
             <mat-option *ngFor="let currency of currencys" [value]="currency.key">
               {{currency.name}}
             </mat-option>
@@ -19,8 +19,8 @@
     <mat-divider></mat-divider>
     <div>
       <mat-form-field appearance="fill">
-          <mat-label>Select</mat-label>
-          <mat-select>
+          <mat-label>Selecionar Moeda</mat-label>
+          <mat-select ([value])='option2'>
             <mat-option *ngFor="let currency of currencys" [value]="currency.key">
               {{currency.name}}
             </mat-option>
