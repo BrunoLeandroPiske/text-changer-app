@@ -4,7 +4,7 @@
     <div>
       <mat-form-field appearance="fill">
           <mat-label>Selecionar Moeda</mat-label>
-          <mat-select ([value])='option1'>
+          <mat-select ([value])='option1' (change)="onChangeOption1($event.target.value)">
             <mat-option *ngFor="let currency of currencys" [value]="currency.key">
               {{currency.name}}
             </mat-option>
@@ -20,7 +20,7 @@
     <div>
       <mat-form-field appearance="fill">
           <mat-label>Selecionar Moeda</mat-label>
-          <mat-select ([value])='option2'>
+          <mat-select ([value])='option2' (change)="onChangeOption2($event.target.value)">
             <mat-option *ngFor="let currency of currencys" [value]="currency.key">
               {{currency.name}}
             </mat-option>
